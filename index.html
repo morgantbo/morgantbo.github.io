@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <title>Morgan's Personal Website</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,51 +8,56 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Google Icons</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <title>Font Awesome 5 Icons</title>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="index.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 body, html {
-  height: 100%;
+  height: 100vh;
   line-height: 1.8;
 }
 
 /* Full height image header */
 .bgimg-1 {
-  background-position: center;
+  background-position: left;
   background-size: cover;
-  background-image: url("/w3images/mac.jpg");
   min-height: 100%;
 }
 
 .w3-bar .w3-button {
-  padding: 16px;
+  padding: 0x;
+  margin: 0;
 }
 </style>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+<script src='main.js'></script>
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
+  <nav class="w3-bar w3-white w3-card" id="myNavbar">
     <a href="#home" class="w3-bar-item w3-button w3-wide">MORGAN BO</a>
     <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#headshot & resume" class="w3-bar-item w3-button"><i class="fa fa-user"></i> HEADSHOT & RESUME</a>
-      <a href="#production photos" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PRODUCTION PHOTOS</a>
-      <a href="#reel" class="w3-bar-item w3-button"><i style='font-size:18px' class='fas'>&#xf1c8;</i> REEL</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-    </div>
+      <ul>
+      <li style="float:right"><a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a></li>
+      <li style="float:right"><a href="#reel" class="w3-bar-item w3-button"><i style='font-size:18px' class='fas'>&#xf1c8;</i> REEL</a></li>
+      <li style="float:right"><a href="#production photos" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PRODUCTION PHOTOS</a></li>
+      <li style="float:right"><a href="#headshot & resume" class="w3-bar-item w3-button"><i class="fa fa-user"></i> HEADSHOT & RESUME</a></li>
+      <li style="float:right"><a href="#about" class="w3-bar-item w3-button">ABOUT</a></li>
+    </ul>
+    
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
-  </div>
+  </nav>
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
@@ -351,7 +356,6 @@ body, html {
       </p>
     </form>
     <!-- Image of location/map -->
-    <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
   </div>
 </div>
 
