@@ -1,5 +1,5 @@
 var scroll = new SmoothScroll('a[href*="#"]',{
-    speed: 800
+    speed: 800,
 });
 const navSlide =() =>{
     const burger = document.querySelector(".burger");
