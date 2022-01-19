@@ -257,7 +257,10 @@ img{
 }
 
 .home_blob{
+  position: relative;
+  left: 20px;
   width:225px;
+  height: 300px;
   fill: var(--first-color);
 }
 
@@ -283,9 +286,9 @@ img{
   margin-bottom: var(--mb-2);
 }
 
-.home_scroll{
+/* .home_scroll{
   display: none;
-}
+} */
 
 .home_scroll-button{
   color: var(--first-color);
@@ -336,6 +339,9 @@ img{
   align-items: center;
 }
 /*  ================= ABOUT  =================*/
+.about_section{
+  padding: 2rem 0 3rem;
+}
 .about_img{
   width: 200px;
   border-radius: .5rem;
@@ -376,11 +382,9 @@ img{
   padding-bottom: .5rem;
 }
 .technical-button{
-  
   padding-left: 1rem;
 }
 .acting-button{
- 
   padding-right: 1rem;
 }
 
@@ -398,6 +402,70 @@ img{
 
 
 /*  ================= QUALIFICATION  =================*/
+#skills{
+  padding: 3rem 0 5rem;
+}
+.qualification_tabs{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
+}
 
+.qualification_button{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
+.qualification_button:hover{
+  color: var(--first-color);
+}
+.qualification_icon{
+  font-size: 1.8rem;
+  margin-right: var(--mb-0-25);
+}
+.qualification_data{
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+  flex-direction: column-reverse;
+}
+.qualification_title{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+.qualification_subtitle{
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+.qualification_calendar{
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
+.qualification_rounder{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+}
+
+.qualification_line{
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--first-color);
+  transform: translate(6px, -7px);
+}
+.qualification [data-content]{
+  display: none;
+}
+.qualification_active[data-content]{
+  display: block;
+} 
+
+.qualification_button .qualification_active{
+  color: var(--first-color);
+}
 /*  ================= SERVICES  =================*/
 
