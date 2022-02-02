@@ -113,13 +113,13 @@ img{
 }
 
 .section_title{
+  margin-bottom: var(--mb-3);
   font-size: var(--h1-font-size);
 }
 
 .section_subtitle{
   display: block;
   font-size: var(--small-font-size);
-  margin-bottom: var(--mb-3);
 }
 
 .section_title,
@@ -398,11 +398,9 @@ img{
   padding-left: .5rem;
   padding-right: .5rem;
 }
-/*  ================= SKILLS  =================*/
-
 
 /*  ================= QUALIFICATION  =================*/
-#skills{
+#qualifications{
   padding: 3rem 0 5rem;
 }
 .qualification_tabs{
@@ -466,6 +464,62 @@ img{
 
 .qualification_button .qualification_active{
   color: var(--first-color);
+}
+
+/*  ================= SKILLS  =================*/
+.skills_sections{
+  row-gap: 2rem;
+  padding-top: 1rem;
+}
+.skills_type{
+  background-color: var(--first-color-lighter);
+  padding:1.5rem 0 1.5rem;
+  border-radius: 1.25rem;
+}
+.skills_header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+}
+.skills_title{
+  font-weight: var(--font-medium);
+  font-size: var(--normal-font-size);
+}
+.skills_box{
+  display: flex;
+  justify-content: center;
+  column-gap:3.5rem;
+}
+
+.skills_group{
+  display: grid;
+  align-content: flex-start;
+  row-gap: 1rem;
+}
+
+.skills_data{
+  display:flex;
+  column-gap: .5rem;
+}
+.skills_name{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  line-height: 18px;
+}
+.skills_level{
+  font-size: 11px;
+}
+.skills_close .skills_box{
+  height: 0;
+  overflow: hidden;
+}
+.skills_open .skills_box{
+  height: max-content;
+}
+.skills_open .skills_arrow{
+  transform: rotate(-180deg);
 }
 /*  ================= SERVICES  =================*/
 
