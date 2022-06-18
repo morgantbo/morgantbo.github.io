@@ -74,6 +74,28 @@ tabs.forEach(tab => {
         tab.classList.add('qualification_active')
     })
 })
+// /*======================= EXPERIENCES TABS =======================*/
+// const tabs1 = document.querySelectorAll('[data-toggle]'),
+//     tabContents1 = document.querySelectorAll('[data-content]')
+
+
+// tabs1.forEach(tab => {
+//     tab.addEventListener('click', () => {
+//         // const target = document.querySelector(tab.dataset.target)
+        
+//         tabContents1.forEach(tabContent => {
+//             tabContent.classList.remove('skills_deactivate')
+//             tabContent.classList.add('skills_on')
+//         })
+//         tabContents1.forEach(tabContent => {
+//             if (!tabContent.classList.contains('skills_on')){
+//                 tabContent.classList.add('skills_deactivate')
+//             }
+//         })
+        
+//         // tab.classList.add('skills_deactivate')
+//     })
+// })
 /*======================= SERVICES MODAL =======================*/
 
 /*======================= ACCORDION SKILLS ========================*/

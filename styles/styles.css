@@ -471,6 +471,9 @@ img{
   row-gap: 2rem;
   padding-top: 1rem;
 }
+.skills_button{
+  cursor: pointer;
+}
 .skills_type{
   background-color: var(--first-color-lighter);
   padding:1.5rem 0 1.5rem;
@@ -521,6 +524,9 @@ img{
 .skills_open .skills_arrow{
   transform: rotate(-180deg);
 }
+.skills_deactivate{
+  display: None;
+} 
 /*  ================= SERVICES  =================*/
 
 
