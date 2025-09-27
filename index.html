@@ -2,11 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
-    <title>Morgan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morgan Bo - Software Engineer & Developer</title>
+    <meta name="description" content="Morgan Bo is a passionate software engineer with experience building scalable applications and contributing to products used by millions of users. Specializing in web development, mobile apps, and aviation technology.">
+    <meta name="keywords" content="software engineer, developer, web development, mobile apps, Morgan Bo, programming, technology">
+    <meta name="author" content="Morgan Bo">
+    <meta property="og:title" content="Morgan Bo - Software Engineer & Developer">
+    <meta property="og:description" content="Passionate software engineer building large-scale, high-impact products with 100M+ installs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://morgantbo.github.io">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Morgan Bo - Software Engineer & Developer">
+    <meta name="twitter:description" content="Passionate software engineer building large-scale, high-impact products with 100M+ installs.">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -21,12 +31,14 @@
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
+        <div class="theme-toggle">
+            <i class='bx bx-sun' id="theme-icon"></i>
+        </div>
     </header>
-    <section class="home", id="home">
+    <section class="home" id="home">
         <div class="home-content">
             <h1>Hi, It's <span>Morgan</span></h1>
-            <h3 class="text-animation">I'm a <span>
-            </span></h3>
+            <h3 class="text-animation">I'm a <span></span></h3>
             <p>Passionate about building large-scale, high-impact products, I have contributed to major feature launches in industry-leading services and apps with 100M+ installs.</p>
             <div class="social-icons">
                 <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/morgantbo"><i class='bx bxl-linkedin'></i></a>
@@ -36,14 +48,44 @@
             </div>
 
             <div class="btn-group">
-                <a target="_blank" rel="noopener noreferrer" href="https://calendly.com/morganbo/30min" class="btn">Let's chat</a>
-                <a href="contact"
-                class="btn">Contacts</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://calendly.com/morganbo/30min" class="btn">Let's Chat</a>
+                <a href="img/FILE_0976.pdf" target="_blank" rel="noopener noreferrer"
+                class="btn">Download CV</a>
             </div>
         </div>
             <div class="home-img">
-                <img src="img/MorganBo2.jpg" alt="">
+                <img src="img/morganbo_work.jpg" alt="Morgan Bo - Software Engineer and Developer">
             </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <div class="about-text">
+                <p>I'm a passionate software engineer with experience building scalable applications and contributing to products used by millions of users. My journey spans from web development to mobile apps, with a focus on creating impactful solutions.</p>
+                <p>When I'm not coding, you'll find me flying planes, acting in theater productions, or exploring new technologies. I believe in the power of technology to solve real-world problems and am always eager to learn and grow.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <div class="experience-content">
+            <h2 class="heading">My <span>Experience</span></h2>
+            <div class="experience-grid">
+                <div class="experience-item">
+                    <h3>Software Engineer</h3>
+                    <p>Developed and maintained large-scale applications with 100M+ installs, contributing to major feature launches and performance optimizations.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Full-Stack Developer</h3>
+                    <p>Built end-to-end solutions using modern web technologies, focusing on user experience and system reliability.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Mobile App Developer</h3>
+                    <p>Created cross-platform mobile applications with focus on performance and user engagement.</p>
+                </div>
+            </div>
+        </div>
     </section>
     
     <section class="projects" id="projects">
@@ -63,10 +105,12 @@
                         <h2>Cheque</h2>
                     </div>
                     <div class="card-desc">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dolorum ratione! Similique harum temporibus asperiores necessitatibus tempore reiciendis perferendis vitae, quaerat, aperiam eius placeat dicta vel incidunt iste. Dolorum, illo.</p>
+                        <p>A modern payment processing application built with React and Node.js. Features secure transaction handling, real-time notifications, and comprehensive analytics dashboard for business insights.</p>
                     </div>
                     <div class="card-tech">
-
+                        <span class="tech-tag">Swift</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TypeScript</span>
                     </div>
                 </li>
 
@@ -74,19 +118,21 @@
                     <div class="card-header">
                         <i class='bx bx-folder' id="folder"></i>
                         <span class="external-links">
-                            <a target="_blank" rel="noopener noreferrer" class="github-icon" href="https://github.com/morgantbo/PaymentPrototype">
+                            <a target="_blank" rel="noopener noreferrer" class="github-icon" href="https://github.com/morgantbo">
                                 <i class='bx bxl-github' ></i>
                             </a>
                         </span>
                     </div>
                     <div class="card-title">
-                        <h2>Cheque</h2>
+                        <h2>Flight Tracker</h2>
                     </div>
                     <div class="card-desc">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dolorum ratione! Similique harum temporibus asperiores necessitatibus tempore reiciendis perferendis vitae, quaerat, aperiam eius placeat dicta vel incidunt iste. Dolorum, illo.</p>
+                        <p>Real-time flight tracking application with weather integration and route optimization. Built for aviation enthusiasts and pilots to monitor flights and plan routes efficiently.</p>
                     </div>
                     <div class="card-tech">
-
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">API Integration</span>
+                        <span class="tech-tag">Maps</span>
                     </div>
                 </li>
 
@@ -94,19 +140,21 @@
                     <div class="card-header">
                         <i class='bx bx-folder' id="folder"></i>
                         <span class="external-links">
-                            <a target="_blank" rel="noopener noreferrer" class="github-icon" href="https://github.com/morgantbo/PaymentPrototype">
+                            <a target="_blank" rel="noopener noreferrer" class="github-icon" href="https://github.com/morgantbo">
                                 <i class='bx bxl-github' ></i>
                             </a>
                         </span>
                     </div>
                     <div class="card-title">
-                        <h2>Cheque</h2>
+                        <h2>Theater Management</h2>
                     </div>
                     <div class="card-desc">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dolorum ratione! Similique harum temporibus asperiores necessitatibus tempore reiciendis perferendis vitae, quaerat, aperiam eius placeat dicta vel incidunt iste. Dolorum, illo.</p>
+                        <p>Comprehensive theater production management system for scheduling, casting, and production coordination. Streamlines the entire production process from auditions to final performance.</p>
                     </div>
                     <div class="card-tech">
-
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">PostgreSQL</span>
                     </div>
                 </li>
             </div>
@@ -116,19 +164,19 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="">
+        <form id="contactForm">
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Phone Number">
-                    <input type="text" placeholder="Subject">
+                    <input type="tel" name="phone" placeholder="Phone Number">
+                    <input type="text" name="subject" placeholder="Subject" required>
                 </div>
             </div>
             <div class="input-group-2">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
                 <input type="submit" value="Send Message" class="btn">
             </div>
         </form>
