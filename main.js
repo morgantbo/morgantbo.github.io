@@ -23,6 +23,13 @@ window.onscroll = () => {
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
+    
+    // Ensure navbar is hidden on mobile when menu is closed
+    if (!navbar.classList.contains('active')) {
+        navbar.style.display = 'none';
+    } else {
+        navbar.style.display = 'flex';
+    }
 }
 
 // Close mobile menu when clicking on nav links
@@ -53,10 +60,17 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     const subject = formData.get('subject');
     const message = formData.get('message');
     
-    // Create mailto link
-    const mailtoLink = `mailto:morgantbo@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
-        `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`
-    )}`;
+    // Create mailto link with nicely formatted body
+    const formattedBody = `Hi Morgan,
+
+${message}
+
+Best,
+${name}
+${email}
+${phone}`;
+
+    const mailtoLink = `mailto:morgantbo@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(formattedBody)}`;
     
     // Open email client
     window.location.href = mailtoLink;
